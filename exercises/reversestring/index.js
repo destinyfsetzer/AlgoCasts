@@ -26,18 +26,18 @@
 // }
 
 // SOLUTION ONE -- MY PREFERRED SOLUTION
-function reverse(str) {
-    // turn string into an array
-    let arr = str.split("");
-    // reverse the order of the array
-    arr.reverse();
-    // join that array back into a string
-    // return the result!
-    return arr.join("");
-}
+// function reverse(str) {
+//     // turn string into an array
+//     let arr = str.split("");
+//     // reverse the order of the array
+//     arr.reverse();
+//     // join that array back into a string
+//     // return the result!
+//     return arr.join("");
+// }
 
-reverse("hello")
-module.exports = reverse;
+// reverse("hello")
+// module.exports = reverse;
 
 
 // DEBUGGER STEPS
@@ -47,3 +47,10 @@ module.exports = reverse;
 // TO CONTINUE EXECUTION OF THE FILE, PRESS 'C' THEN 'ENTER'
 // TO LAUNCH A 'REPL' SESSION, TYPE 'REPL' THEN 'ENTER'
 // TO EXIT THE 'REPL' SESSION, TYPE 'REPL' THEN 'ENTER'
+
+function reverse (str) {
+    let arr = str.split("").reverse().join("")
+    return arr
+}
+
+module.exports = reverse;
